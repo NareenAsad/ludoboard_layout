@@ -12,15 +12,15 @@ class Board extends StatelessWidget {
       children: [
         Container(
           color: color,
-          height: 240,
-          width: 240,
+          height: 480,
+          width: 480,
         ),
         Positioned(
           child: Stack(
             children: [
               Container(
-                height: 153,
-                width: 153,
+                height: 306,
+                width: 306,
                 color: Colors.black,
               ),
               Positioned(
@@ -32,8 +32,8 @@ class Board extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.white,
                   ),
-                  height: 150,
-                  width: 150,
+                  height: 300,
+                  width: 300,
                 ),
               ),
               Positioned(
@@ -45,8 +45,8 @@ class Board extends StatelessWidget {
                     color: color,
                   ),
                   child: SizedBox(
-                    width: 40,
-                    height: 50,
+                    width: 60,
+                    height: 90,
                   ),
                 ),
               ),
@@ -59,8 +59,8 @@ class Board extends StatelessWidget {
                     color: color,
                   ),
                   child: SizedBox(
-                    width: 40,
-                    height: 50,
+                    width: 60,
+                    height: 90,
                   ),
                 ),
               ),
@@ -73,8 +73,8 @@ class Board extends StatelessWidget {
                     color: color,
                   ),
                   child: SizedBox(
-                    width: 40,
-                    height: 50,
+                    width: 60,
+                    height: 90,
                   ),
                 ),
               ),
@@ -87,8 +87,8 @@ class Board extends StatelessWidget {
                     color: color,
                   ),
                   child: SizedBox(
-                    width: 40,
-                    height: 50,
+                    width: 60,
+                    height: 90,
                   ),
                 ),
               ),
@@ -108,63 +108,63 @@ class CenterBoard extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 120,
-          width: 120,
+          height: 240,
+          width: 240,
           color: Colors.white,
         ),
         Positioned(
-          left: 30,
-          top: -29,
+          left: 80,
+          top: -39,
           child: DecoratedBox(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.teal,
             ),
             child: SizedBox(
-              width: 60,
-              height: 60,
+              width: 80,
+              height: 80,
             ),
           ),
         ),
         Positioned(
-          left: -29,
-          top: 30,
+          left: -39,
+          top: 80,
           child: DecoratedBox(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.deepOrange,
             ),
             child: SizedBox(
-              width: 60,
-              height: 60,
+              width: 80,
+              height: 80,
             ),
           ),
         ),
         Positioned(
-          right: -29,
-          top: 30,
+          right: -39,
+          top: 80,
           child: DecoratedBox(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.cyan,
             ),
             child: SizedBox(
-              width: 60,
-              height: 60,
+              width: 80,
+              height: 80,
             ),
           ),
         ),
         Positioned(
-          bottom: -29,
-          left: 30,
+          bottom: -39,
+          left: 80,
           child: DecoratedBox(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.lime,
             ),
             child: SizedBox(
-              width: 60,
-              height: 60,
+              width: 80,
+              height: 80,
             ),
           ),
         ),
@@ -184,8 +184,8 @@ class Board2 extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         Container(
-          height: 240,
-          width: 120,
+          height: 480,
+          width: 240,
           child: GridView.builder(
             itemCount: 18,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -219,8 +219,8 @@ class Board3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 120,
-      width: 240,
+      height: 240,
+      width: 480,
       child: GridView.builder(
           itemCount: 18,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
